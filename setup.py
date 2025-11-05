@@ -9,7 +9,9 @@ def get_requirements() -> List[str]:
 
     try:
         with open("requirements.txt", "r") as file:
+            # Read lines from filr
             lines = file.readlines()
+            #Process each line
             for line in lines:
                 requirement = line.strip()
                 if requirement and requirement != '-e.':
