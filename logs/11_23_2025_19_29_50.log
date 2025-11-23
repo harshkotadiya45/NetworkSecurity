@@ -1,0 +1,22 @@
+2025-11-23 19:29:52,442 | INFO | Initiate the datta ingestion
+2025-11-23 19:29:57,992 | INFO | Performed train test split on the dataframe
+2025-11-23 19:29:57,992 | INFO | Exited split_data_as_train_test method of Data_Ingestion class
+2025-11-23 19:29:57,995 | INFO | Exporting train and test file path.
+2025-11-23 19:29:58,583 | INFO | Exported train and test file path.
+2025-11-23 19:29:58,583 | INFO | data initiation Completed
+2025-11-23 19:29:58,583 | INFO | initiate data validation
+2025-11-23 19:29:58,621 | INFO | Required number of columns: 2
+2025-11-23 19:29:58,621 | INFO | Dataframe of columns : 31
+2025-11-23 19:29:58,623 | INFO | Required number of columns: 2
+2025-11-23 19:29:58,623 | INFO | Dataframe of columns : 31
+2025-11-23 19:29:58,625 | INFO | Numerical columns exist
+2025-11-23 19:29:58,806 | INFO | Initiate data validation Completed.
+2025-11-23 19:29:58,808 | INFO | data transformation Started.
+2025-11-23 19:29:58,808 | INFO | Entered initiate_data_transformation method of DataTransform Class
+2025-11-23 19:29:58,808 | INFO | Starting data transformation
+2025-11-23 19:29:58,838 | INFO | Enter get_data_transformer_object method of Transformation class
+2025-11-23 19:29:58,838 | INFO | Initilise KNNImpiuter with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2025-11-23 19:29:58,855 | INFO | Entered the save_object method of MainUtils class
+2025-11-23 19:29:58,867 | INFO | Exited the save_object method of MainUtils class
+2025-11-23 19:29:58,867 | INFO | data transformation Complete.
+2025-11-23 19:29:58,867 | INFO | Model training Started
