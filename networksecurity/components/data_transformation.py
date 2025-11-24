@@ -35,7 +35,7 @@ class DataTransformation:
             raise NetworkSecurityException(e,sys)
           
 
-    def get_data_transformer_object(cls) -> Pipeline:
+    def get_data_transformer_object(self) -> Pipeline:
         logging.info("Enter get_data_transformer_object method of Transformation class")
         try:
             imputer :KNNImputer = KNNImputer(**DATA_TRANSFORMATION_IMPUTER_PARAMS)
@@ -77,7 +77,7 @@ class DataTransformation:
             
 
             data_transformation_artifact = DataTransformationArtifact(
-                transformed_object_file_path=self.data_transformation_config.transformed_train_file_path,
+                transformed_object_file_path=self.data_transformation_config.transformed_object_file_path,
                 transformed_train_file_path=self.data_transformation_config.transformed_train_file_path, 
                 transformed_test_file_path=self.data_transformation_config.transformed_test_file_path
             )

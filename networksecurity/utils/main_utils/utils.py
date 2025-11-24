@@ -45,7 +45,7 @@ def save_object(file_path: str, obj: object) -> None:
         logging.info("Entered the save_object method of MainUtils class")
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, "wb") as file_obj:
-            dill.dump(obj, file_obj)
+            pickle.dump(obj, file_obj)
         logging.info("Exited the save_object method of MainUtils class")
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
@@ -56,7 +56,7 @@ def load_object(file_path: str) -> object:
             raise Exception(f"The file: {file_path} is not exists")
         with open(file_path, "rb") as file_obj:
             print(file_obj)
-            return dill.load(file_obj)
+            return pickle.load(file_obj)
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
     
