@@ -15,6 +15,9 @@ Requires-Dist: dill
 Requires-Dist: pyaml
 Requires-Dist: dagshub
 Requires-Dist: mlflow
+Requires-Dist: fastapi
+Requires-Dist: unicorn
+Requires-Dist: python-multipart
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist

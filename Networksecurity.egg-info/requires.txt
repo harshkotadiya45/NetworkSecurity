@@ -10,3 +10,6 @@ dill
 pyaml
 dagshub
 mlflow
+fastapi
+unicorn
+python-multipart
